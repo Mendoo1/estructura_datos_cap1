@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    float medicion;
+    int validos = 0;
+
+    for (int i = 1; i <= 10; i++) {
+        cout << "Ingrese la medicion " << i << ": ";
+        cin >> medicion;
+
+        if (medicion == 999) {
+            break;
+        }
+        if (medicion < 0) {
+            continue;
+        }
+        validos++;
+    }
+
+    cout << "Valores validos: " << validos << endl;
+
+    return 0;
+}
