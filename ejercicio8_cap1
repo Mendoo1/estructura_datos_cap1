@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int edad, validado;
+
+    printf("Ingrese la edad: ");
+    scanf("%d", &edad);
+    printf("El registro fue validado? (1 = si, 0 = no): ");
+    scanf("%d", &validado);
+
+    if (edad >= 18 && validado == 1) {
+        printf("La observacion se puede incorporar\n");
+    } else {
+        printf("La observacion no se puede incorporar\n");
+    }
+
+    return 0;
+}
