@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    float temperatura;
+
+    printf("Ingrese la temperatura: ");
+    scanf("%f", &temperatura);
+
+    if (temperatura < 0) {
+        printf("Congelacion\n");
+    } else if (temperatura <= 20) {
+        printf("Frio\n");
+    } else {
+        printf("Templado\n");
+    }
+
+    return 0;
+}
