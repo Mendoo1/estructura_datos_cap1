@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    float medicion, perdida;
+    int entero;
+
+    printf("Ingrese la medicion del sensor: ");
+    scanf("%f", &medicion);
+
+    entero = (int) medicion;
+    perdida = medicion - entero;
+
+    printf("Valor decimal: %.2f\n", medicion);
+    printf("Valor entero: %d\n", entero);
+    printf("Valor perdido: %.2f\n", perdida);
+
+    return 0;
+}
