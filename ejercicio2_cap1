@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdbool.h>
+
+int main() {
+    int id, edad, v;
+    float promedio;
+    char categoria;
+    bool valido;
+
+    printf("Ingrese el identificador: ");
+    scanf("%d", &id);
+    printf("Ingrese la edad: ");
+    scanf("%d", &edad);
+    printf("Ingrese el valor promedio: ");
+    scanf("%f", &promedio);
+    printf("Ingrese la categoria (una letra): ");
+    scanf(" %c", &categoria);
+    printf("Es valido el registro? (1 = si, 0 = no): ");
+    scanf("%d", &v);
+
+    valido = v;
+
+    printf("Identificador: %d\n", id);
+    printf("Edad: %d\n", edad);
+    printf("Promedio: %.2f\n", promedio);
+    printf("Categoria: %c\n", categoria);
+    printf("Valido: %d\n", valido);
+
+    return 0;
+}
