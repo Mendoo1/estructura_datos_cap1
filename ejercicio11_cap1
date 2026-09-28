@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int clave = 1234;
+    int ingresada;
+    int intentos = 0;
+
+    cout << "Ingrese la clave: ";
+    cin >> ingresada;
+    intentos++;
+
+    while (ingresada != clave) {
+        cout << "Clave incorrecta, intente de nuevo: ";
+        cin >> ingresada;
+        intentos++;
+    }
+
+    cout << "Clave correcta" << endl;
+    cout << "Intentos: " << intentos << endl;
+
+    return 0;
+}
