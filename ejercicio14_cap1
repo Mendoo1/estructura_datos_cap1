@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int n, i, j;
+    int cont1 = 0, cont2 = 0;
+
+    printf("Ingrese n: ");
+    scanf("%d", &n);
+
+    for (i = 0; i < n; i++) {
+        cont1++;
+    }
+
+    for (i = 0; i < n; i++) {
+        for (j = 0; j < n; j++) {
+            cont2++;
+        }
+    }
+
+    printf("Un recorrido: %d operaciones, O(n)\n", cont1);
+    printf("Dos ciclos anidados: %d operaciones, O(n^2)\n", cont2);
+
+    return 0;
+}
