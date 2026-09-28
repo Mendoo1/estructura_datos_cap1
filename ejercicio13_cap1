@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main() {
+    int edades[10];
+    int i, minima, maxima, suma = 0, contador = 0;
+    float media;
+
+    for (i = 0; i < 10; i++) {
+        printf("Ingrese la edad %d: ", i + 1);
+        scanf("%d", &edades[i]);
+    }
+
+    minima = edades[0];
+    maxima = edades[0];
+
+    for (i = 0; i < 10; i++) {
+        suma = suma + edades[i];
+        if (edades[i] < minima) {
+            minima = edades[i];
+        }
+        if (edades[i] > maxima) {
+            maxima = edades[i];
+        }
+    }
+
+    media = suma / 10.0;
+
+    for (i = 0; i < 10; i++) {
+        if (edades[i] > media) {
+            contador++;
+        }
+    }
+
+    printf("Edad minima: %d\n", minima);
+    printf("Edad maxima: %d\n", maxima);
+    printf("Media: %.2f\n", media);
+    printf("Participantes sobre la media: %d\n", contador);
+
+    return 0;
+}
