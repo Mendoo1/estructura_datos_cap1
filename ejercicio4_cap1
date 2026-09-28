@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int a, b;
+
+    printf("Ingrese los registros del algoritmo 1: ");
+    scanf("%d", &a);
+    printf("Ingrese los registros del algoritmo 2: ");
+    scanf("%d", &b);
+
+    printf("Suma: %d\n", a + b);
+    printf("Diferencia: %d\n", a - b);
+    printf("Producto: %d\n", a * b);
+
+    if (b != 0) {
+        printf("Division entera: %d\n", a / b);
+        printf("Residuo: %d\n", a % b);
+    } else {
+        printf("No se puede dividir entre cero\n");
+    }
+
+    return 0;
+}
