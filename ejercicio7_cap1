@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int observaciones;
+    float porcentaje;
+
+    printf("Ingrese las observaciones validas: ");
+    scanf("%d", &observaciones);
+    printf("Ingrese el porcentaje de datos completos: ");
+    scanf("%f", &porcentaje);
+
+    if (observaciones >= 100 && porcentaje >= 70) {
+        printf("El conjunto de datos cumple las condiciones\n");
+    } else {
+        printf("El conjunto de datos no cumple las condiciones\n");
+    }
+
+    return 0;
+}
